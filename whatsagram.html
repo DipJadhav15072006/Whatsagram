@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsagram</title>
+    <style rel="stylesheet" href="whatsagram.css"></style>
+    <style>
+        body{
+            background: linear-gradient(rgb(171, 3, 143),rgb(25, 144, 213));
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .logo{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 7cm;
+
+            border-image-width: 1cm;
+            border-color: aliceblue;
+            border-radius: 2cm;
+        }
+    
+    #login{
+        cursor: pointer;
+        color: white;
+        background: #1f0269;
+        padding: 10px;
+        width: 200px;
+        height: 50px;
+        font-size: 25px;
+        border: solid 1px;
+        border-radius: 25px;
+        color: rgb(255, 255, 255);
+        font-family: "Courier New", Courier, monospace;
+        align-self: center;
+        
+    }
+    input,textarea{
+        width: 85%;;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 20px;
+        height: 1px;
+        font-size: 20px;
+        width: 400px;
+        border: solid 1px;
+        background: #1f0269;
+        border-radius:50px ;
+        
+    }
+    #head1{
+        color:white ;
+        font-family:Copperplate, Papyrus, fantasy;
+        font-size: 50px;
+    }
+    #head2{
+        color:whitesmoke;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 30px;
+    }
+    .center{
+        text-align: center;
+    }
+    .box{
+        max-width: 600px;
+        margin: 40px auto;
+        background: linear-gradient(rgb(9, 86, 194),rgb(130, 4, 103));
+        backdrop-filter: blur(1px);
+        padding: 30px;
+        border-radius: 50px;
+        border: 2px solid rgb(255, 255, 255);
+        overflow-x: hidden;
+    }
+    </style>
+    <script src="whatsagram.js"></script>
+</head>
+<body>
+    <img CLASS="logo" src="image copy.png" class="gap">
+    <p></p>
+    <div class="box">
+    <h1 id="head1" class="center" >Whatsagram</h1>
+    <h1 id="head2" class="center" >Log in to Whatsagram</h1>
+    <div>
+        <form action="savedata.php" method="post">
+        <form>
+            <input type="text"  placeholder="Username" class="bo" class="center" name="Username">
+
+        </form>
+    </div><br>
+    <div>
+        <form>
+            <input  class="bo" class="center" type="password" placeholder="Password" name="Password">
+        </form>
+    </div><br>
+    <div>
+        <form>
+            <button class="center" class="bo" id="login">LOG IN</button>
+        </form>
+    </div>
+    </div>
+</form>
+
+</body>
+</html>
